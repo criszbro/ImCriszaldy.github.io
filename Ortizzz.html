@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/portfolio /IMG_20231207_233621.jpg') center/cover no-repeat;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffcccc;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #555;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .content-section {
+            display: none;
+            align-items: left;
+            color: #fff;
+            justify-content: space-between;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 20px;
+        }
+
+        .content-section img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        .portfolio-item {
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            background: #555;
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-item .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover .icon {
+            transform: rotate(360deg);
+        }
+
+        .achievement {
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            background: #555;
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .achievement:hover img {
+            transform: scale(1.1);
+        }
+
+        .achievement h3,
+        .achievement p {
+            color: #fff;
+        }
+
+        footer {
+            text-align: left;
+            padding: 10px;
+            background-color: #ffcccc;
+            color: #555;
+        }
+
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a onclick="showSection('home')">HOME</a>
+        <a onclick="showSection('portfolio')">PORTFOLIO</a>
+        <a onclick="showSection('achievements')">ACHIEVEMENTS</a>
+        <a onclick="showSection('interests')">PERSONAL INTERESTS</a>
+        <a onclick="showSection('contacts')">CONTACTS</a>
+    </nav>
+
+    <div id="home" class="content-section" style="display: flex;">
+         <h2> Hello, I'm Cris, a second-year IT student with a passion for programming. Fueled by dedication and determination, I thrive on tackling challenges in both my academic and personal pursuits. Always eager to learn and grow in the dynamic world of technology.</h2> <br>
+        <img src="/portfolio /IMG_20231207_233356.jpg">
+    </div>
+
+    <div id="portfolio" class="content-section" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        <div class="portfolio-item">
+            <img src="th (6).jpeg">
+            <i class="icon fas fa-cog"></i>
+            <h3>Project 1</h3>
+            <p>"Dear Professor [Sadicon],
+
+I am writing to express my sincere gratitude for your guidance and support throughout my IT studies. Your expertise and passion have been instrumental in shaping my understanding of the subject. I am dedicated to excelling in this field and truly appreciate the valuable insights you've shared. Your encouragement fuels my determination, and I am committed to making the most of my education under your mentorship. Thank you for being an inspiration and for your unwavering commitment to our success.
+
+Best regards,
+Cris"</p>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="th (8).jpeg">
+            <i class="icon fas fa-cog"></i>
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+
+        <!-- Add more portfolio items as needed -->
+
+    </div>
+
+    <div id="achievements" class="content-section" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        <div class="achievement">
+            <img src="/portfolio /IMG_20231202_171910.jpg" alt="Achievement 1">
+            <h3>My mama ✨</h3>
+            <p>"Grateful beyond words for the unwavering support and love from my mama. Her strength, guidance, and endless sacrifices have shaped me into the person I am today. Thank you, Mama, for being my rock and constant inspiration."</p>
+        </div>
+
+        <div class="achievement">
+            <img src="/portfolio /IMG_20231202_171956.jpg">
+            <h3>My papa 💪🏻</h3>
+            <p>"Expressing heartfelt gratitude to my papa, a source of wisdom, strength, and unwavering support. His guidance and love have been my anchor through life's journey. Thank you, Papa, for your enduring presence and the invaluable lessons you've shared."</p>
+        </div>
+        <div class="achievement">
+            <img src="/portfolio /IMG_20231208_164149.jpg" alt="Grade 11 & Grade 12">
+            <h3>Grade 11 & Grade 12 </h3>
+            <p>"I am profoundly grateful for the recognition received during my senior high school years, achieving high honors in both Grade 11 and Grade 12. These accomplishments are a testament to the countless hours of hard work, dedication, and the unwavering support from mentors and loved ones. Each milestone reflects not only academic success but also the resilience and determination that propelled me forward. Here's to the journey of continuous growth and the pursuit of excellence."</p>
+        </div>
+     
+    </div>
+    
+    <footer>
+        <p>SOCIALS: <br> <br>
+            <a href="https://www.instagram.com/yourinstagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/yourfacebook" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/yourtwitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@yourtiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </p>
+        <a href="https://yourgithubusername.github.io/yourrepositoryname">Visit My Portfolio</a>
+
+
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'flex';
+            }
+        }
+    </script>
+
+</body>
+</html>
